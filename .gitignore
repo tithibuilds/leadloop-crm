@@ -1,0 +1,19 @@
+# --- Secrets: never commit keys, flow URLs or filled-in deployment settings ---
+.env
+.env.*
+*.secret.*
+deploy/*.settings.json
+!deploy/settings.template.json
+
+# --- Build output ---
+out/
+bin/
+obj/
+*.zip
+node_modules/
+
+# --- OS and editor files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
